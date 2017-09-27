@@ -2,10 +2,6 @@ package ca.ualberta.cs.lonelytwitter;
 
 import java.util.Date;
 
-/**
- * Created by watts1 on 9/12/17.
- */
-
 public class ImportantTweet extends Tweet implements Tweetable {
 
     public ImportantTweet(String message){
@@ -16,7 +12,10 @@ public class ImportantTweet extends Tweet implements Tweetable {
         super(message, date);
     }
 
-
+    /**
+     * Verifies that this is an important tweet.
+     * @return  a boolean true.
+     */
     @Override
     public Boolean isImportant(){
         return Boolean.TRUE;
